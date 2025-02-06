@@ -36,11 +36,11 @@
         </section>
         <section id="about">
             <h1>About Me</h1>
-            <div class="about-container">
-                <img src="./DuxPhoto.jpg" alt="About Me Photo" class="photo">
+            <div class="about-top">
+                <img src="./DuxPhoto.png" alt="About Me Photo" class="photo-circle">
                 <div class="description">
-                    <p> <strong> I am currently a Second year Computer Science(Advanced) student at the University of Adelaide </strong></p>
-                    <p> I have a strong passion for Artificial Intelligence and Data Science with experience in Algorithm Design and Data Structures as well as <bold> HTML, CSS, JavaScript, and C++ </bold> </p>
+                    <p><strong>I am currently an undergraduate Computer Science(Advanced) student at the University of Adelaide</strong></p>
+                    <p>I have a strong passion for Artificial Intelligence and Data Science with experience in Algorithm Design and Data Structures as well as <strong> JavaScript, C++ and Python</strong></p>
                     <p>Currently, I am Looking for internship experience as a software Engineer and be able to contribute to a dynamic team that works on real-world projects.</p>
                 </div>
             </div>
@@ -64,30 +64,67 @@
                 <div class="hard-skills">
                     <h2>Hard Skills</h2>
                     <div class="skill">
+                        <div class="skill-name">HTML/CSS</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
                         <div class="skill-name">JavaScript</div>
                         <div class="skill-bar">
                             <div class="skill-level" style="width: 90%;"></div>
                         </div>
                     </div>
                     <div class="skill">
-                        <div class="skill-name">HTML</div>
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">SQL</div>
                         <div class="skill-bar">
                             <div class="skill-level" style="width: 80%;"></div>
                         </div>
                     </div>
                     <div class="skill">
-                        <div class="skill-name">C++</div>
+                        <div class="skill-name">React</div>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 70%;"></div>
+                            <div class="skill-level" style="width: 75%;"></div>
                         </div>
                     </div>
                     <!-- Add more hard skills as needed -->
                 </div>
             </div>
+            <h2>Highlights</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./image.png" alt="Hackathon: Hack South 1.0" class="photo">
+                            <div class="description">
+                                <p><strong>Hackathon hosted by the UniSA programming club and Flinders programming club where we were tasked to create a study assistant tool</strong></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Hack.jpg" alt="Competitive Programming competition" class="photo">
+                            <div class="description">
+                                <p><strong>I participated in a competitive programming competition organized by RSP x Competitive Programming Club, where teams of three were tasked with solving challenging algorithmic problems</strong></p>
+                            </div>
+                        </div>
+                        <!-- Add more carousel items as needed -->
+                    </div>
+                    <a class="carousel-control-prev" href="javascript:void(0);" role="button" onclick="prevSlide()">
+                        <span class="carousel-control-prev-icon" aria-hidden="true">&lt;</span>
+                    </a>
+                    <a class="carousel-control-next" href="javascript:void(0);" role="button" onclick="nextSlide()">
+                        <span class="carousel-control-next-icon" aria-hidden="true">&gt;</span>
+                    </a>
+                </div>
+            </div>
         </section>
         <section id="portfolio">
-            <h1>Portfolio</h1>
-            <p>Here are some of my projects.</p>
+            <h1>Projects</h1>
             <div class="projects">
                 <!-- Project Card 1 -->
                 <div class="project-card">
@@ -108,22 +145,16 @@
                     <img src="./Screenshot 2024-07-21 134637.png" alt="Project 3" class="project-image">
                     <h2>Volunteer Website</h2>
                     <p>Group project demonstrating Front end and Backend development with mysql usage</p>
-                    <a href="#" class="project-link">View Project</a>
+                    <a href="https://github.com/UAdelaide/24S1_WDC_UG_Group_58" class="project-link">View Project</a>
                 </div>
                 <!-- Project Card 4 -->
                 <div class="project-card">
-                    <img src="./images/project4.jpg" alt="Project 4" class="project-image">
-                    <h2>Project Title 4</h2>
-                    <p>Short description of the project.</p>
-                    <a href="#" class="project-link">View Project</a>
+                    <img src="./Sudoku.png" alt="Project 4" class="project-image">
+                    <h2>Sudoku Solver</h2>
+                    <p>I implemented a Sudoku solver using backtracking algorithm accompanied with a visualisation using sfml</p>
+                    <a href="https://github.com/Gerrolol/Sudoku" class="project-link">View Project</a>
                 </div>
                 <!-- Project Card 5 -->
-                <div class="project-card">
-                    <img src="./images/project5.jpg" alt="Project 5" class="project-image">
-                    <h2>Project Title 5</h2>
-                    <p>Short description of the project.</p>
-                    <a href="#" class="project-link">View Project</a>
-                </div>
             </div>
         </section>
         <section id="contact">
@@ -143,5 +174,7 @@
         </section>
         
     </div>
+    <script src="./carousel.js"></script>
 </body>
 </html>
+
